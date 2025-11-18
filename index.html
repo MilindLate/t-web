@@ -72,35 +72,48 @@
 
 
     <!-- ======= start Header ======= -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand " href="index.html">
-                    <!-- <img src="images\about\Titans_logo_white.png" class="logo img-fluid" alt="LOGO" style="width: 40px;"> -->
-</a>
-                    <img  src="images\logo\Titans_white_text.png" class="logo" alt="LOGO">
-               <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav ms-auto" id="navbar">
-                        <li class="nav-item dropdown">
-                           
-                       
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact us</a>
-                        </li>
-                    </ul>
-                    
-                    </div>
-                </div>
+  <!-- ======= start Header ======= -->
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <!-- logo (kept as you had it) -->
+                <img src="images\logo\Titans_white_text.png" class="logo" alt="LOGO">
+            </a>
+
+            <!-- mobile toggler (keeps collapse working on small screens) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="navbar">
+                    <!-- preserved your original nav items -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+
+                    <!-- ====== ADDED: Register button (open Google Form) ====== -->
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-success btn-sm text-white" href="https://forms.gle/your-form-id"
+                           target="_blank" rel="noopener noreferrer" role="button" aria-label="Register">
+                            Register
+                        </a>
+                    </li>
+                    <!-- ====== END ADDED BUTTON ====== -->
+                </ul>
             </div>
-        </nav>
-    </header>
-    <!-- ======= end Header ======= -->
+        </div>
+    </nav>
+</header>
+<!-- ======= end Header ======= -->
 
     <!-- ============== Start Hero section ========== -->
     
@@ -799,5 +812,6 @@ Mentors: abc, xyz
 
 
 </body>
+
 
 </html>
