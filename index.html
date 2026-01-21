@@ -73,35 +73,94 @@
 
     <!-- ======= start Header ======= -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand " href="index.html">
-                    <!-- <img src="images\about\Titans_logo_white.png" class="logo img-fluid" alt="LOGO" style="width: 40px;"> -->
-</a>
-                    <img  src="images\logo\Titans_white_text.png" class="logo" alt="LOGO">
-               <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav ms-auto" id="navbar">
-                        <li class="nav-item dropdown">
-                           
-                       
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact us</a>
-                        </li>
-                    </ul>
-                    
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- ======= end Header ======= -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand " href="index.html">
+                <!-- <img src="images\about\Titans_logo_white.png" class="logo img-fluid" alt="LOGO" style="width: 40px;"> -->
+            </a>
+            <img src="images\logo\Titans_white_text.png" class="logo" alt="LOGO">
 
+            <!-- ====== ADDED: Single CTA button (does not remove or change existing markup) ====== -->
+            <!-- Place button right after logo, before collapse so it remains visible on larger screens -->
+            <button type="button" class="btn btn-primary ms-3 d-none d-lg-inline-block"
+                    data-bs-toggle="modal" data-bs-target="#challengeModal" aria-label="Open Challenge Info">
+                Join Challenge
+            </button>
+            <!-- ====== END ADDED BUTTON ====== -->
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="navbar">
+                    <li class="nav-item dropdown">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- ====== ADDED: Modal with description and quick links (one added block only) ====== -->
+<!-- Modal markup (Bootstrap 5) -->
+<div class="modal fade" id="challengeModal" tabindex="-1" aria-labelledby="challengeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="challengeModalLabel">Titans — Team & Yearly Challenge</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Welcome! This site showcases our team, mentors, and this year's selection challenge.
+          Below are the core flows we offer — you can navigate to each area from the website:
+        </p>
+
+        <div class="list-group mb-3" role="tablist" aria-label="Challenge sections">
+          <a class="list-group-item list-group-item-action" href="team.html">Team — Meet members & achievements</a>
+          <a class="list-group-item list-group-item-action" href="mentors.html">Mentors — About our mentors</a>
+          <a class="list-group-item list-group-item-action" href="challenge.html">
+            Challenge — Students choose their domain:
+            Electronics, Software, Mechanical, Media
+          </a>
+          <a class="list-group-item list-group-item-action" href="resources.html">
+            Learning Resources — Domain-specific learning materials (separate tab)
+          </a>
+          <a class="list-group-item list-group-item-action" href="submit.html">
+            Submit Progress — Upload work for evaluation
+          </a>
+        </div>
+
+        <h6>Suggested challenge flow</h6>
+        <ol>
+          <li><strong>Choose domain</strong> (Electronics / Software / Mechanical / Media).</li>
+          <li><strong>Receive problem statements</strong> tailored to the chosen domain.</li>
+          <li><strong>Access resources</strong> in the Resources tab — articles, sample projects, tutorials.</li>
+          <li><strong>Submit progress</strong> in the submission tab for mentor evaluation and feedback.</li>
+        </ol>
+
+        <p class="small text-muted">
+          Pro tips: add domain filters to the Challenges page, provide downloadable resource bundles,
+          and include a simple submission form with file upload + progress notes.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <a href="challenge.html" class="btn btn-outline-primary">Go to Challenges</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ====== END ADDED MODAL ====== -->
     <!-- ============== Start Hero section ========== -->
     
    <section class="hero d-flex flex-column justify-content-center align-items-center mt-5 pt-5" id="hero">
